@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot Interface</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Chatbot Assistant</h1>
+        </header>
+        <main>
+            <form id="questionForm">
+                <input type="text" id="question" name="question" placeholder="Ask me anything..." required>
+                <button type="submit">Send</button>
+            </form>
+            <div id="response">
+                <p id="answer"></p>
+            </div>
+        </main>
+        <footer>
+            <p>Powered by Flask and Scikit-Learn</p>
+        </footer>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
